@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coin Data</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Coin Data</h1>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button onclick="filterData()">Search</button>
+    <button onclick="sortData('marketCap')">Sort by Market Cap</button>
+    <button onclick="sortData('percentageChange')">Sort by Percentage Change</button>
+  </div>
+  <table id="coinTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Image</th>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Volume</th>
+      </tr>
+    </thead>
+    <tbody id="coinTableBody"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
